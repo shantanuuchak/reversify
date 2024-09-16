@@ -8,6 +8,7 @@
 
 :root {
   --shade: #0a0b0a;
+  /* --shade: #231b1b; */
   --tint: #bbbbaf;
   --font: "Dank Mono";
 }
@@ -39,12 +40,15 @@ body {
 }
 
 [data-input-string] {
-  font-size: 3rem;
+  font-size: 2rem;
   border-radius: 1rem;
   border: none;
-  padding: 0.3rem;
+  padding: 1rem;
   font-family: inherit;
   color: var(--shade);
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset -20px -20px 60px #bebebe, inset 20px 20px 60px #ffffff;
 }
 
 [data-btn-copy] {
