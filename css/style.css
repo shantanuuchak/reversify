@@ -1,3 +1,6 @@
+@import url("utils.css");
+
+/* resets */
 *,
 *::before,
 *::after {
@@ -6,14 +9,15 @@
   box-sizing: border-box;
 }
 
+/* variables */
 :root {
   --shade: #dedede;
-  /* --shade: #231b1b; */
   --tint: #0a0b0a;
   --font: "Dank Mono";
   --accent: #2ecc71;
 }
 
+/* general */
 body {
   min-height: 100vh;
   min-width: 100vw;
@@ -32,6 +36,11 @@ body {
   gap: 3rem;
 }
 
+kbd {
+  color: var(--accent);
+}
+
+/* heading */
 .heading {
   font-size: 3rem;
 }
@@ -49,13 +58,10 @@ body {
   z-index: -1;
 }
 
+/* description */
 .description {
   text-align: center;
-}
-
-.aside {
-  display: flex;
-  gap: 2rem;
+  font-weight: bold;
 }
 
 [data-input-string] {
@@ -90,21 +96,7 @@ body {
   font-size: 3rem;
 }
 
-.chip {
-  visibility: hidden;
-  color: var(--accent);
-  animation: fade 1s;
-}
-
-.accent {
-  color: var(--accent);
-  font-weight: bold;
-}
-
-kbd {
-  color: var(--accent);
-}
-
+/* fade animation for chip */
 @keyframes fade {
   0% {
     visibility: visible;

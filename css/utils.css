@@ -1,0 +1,16 @@
+/* utility classes */
+.aside {
+  display: flex;
+  gap: 2rem;
+}
+
+.chip {
+  visibility: hidden;
+  color: var(--accent);
+  animation: fade 1s;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: bold;
+}
