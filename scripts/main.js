@@ -1,3 +1,4 @@
+// DOM Selection
 const inputEl = document.querySelector("[data-input-string]");
 const copyBtnEl = document.querySelector("[data-btn-copy]");
 
@@ -13,6 +14,9 @@ function reverse(string) {
 
 function handleClick() {
   const currInput = inputEl.value;
+  const reverseInput = reverse(currInput);
+  inputEl.value = reverseInput;
 }
 
+// listening on btn click
 copyBtnEl.addEventListener("click", handleClick);
