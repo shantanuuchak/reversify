@@ -5,3 +5,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --shade: #0a0b0a;
+  --tint: #bbbbaf;
+  --font: "Dank Mono";
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: var(--font), monospace;
+  background-color: var(--shade);
+  color: var(--tint);
+  font-weight: lighter;
+
+  /* centering */
+  display: grid;
+  place-items: center;
+}
