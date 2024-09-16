@@ -7,6 +7,9 @@
 .chip {
   visibility: hidden;
   color: var(--accent);
+}
+
+.animate {
   animation: fade 1s;
 }
 

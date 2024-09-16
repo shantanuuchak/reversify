@@ -1,6 +1,7 @@
 // DOM Selection
 const inputEl = document.querySelector("[data-input-string]");
 const copyBtnEl = document.querySelector("[data-btn-copy]");
+const chipEl = document.querySelector(".chip");
 
 function reverse(string) {
   // convert to array
@@ -21,9 +22,13 @@ async function handleReverse() {
   // change the input to reverse
   inputEl.value = reverseInput;
 
-  // set clipboard to reverse
+  // set clipboard to reverse && show chip
   try {
     await navigator.clipboard.writeText(reverseInput);
+    chipEl.classList.add("animate");
+    setTimeout(() => {
+      chipEl.classList.remove("animate");
+    }, 2000);
   } catch (err) {
     console.error("Exception occured:", err);
   }
