@@ -11,6 +11,7 @@
   /* --shade: #231b1b; */
   --tint: #0a0b0a;
   --font: "Dank Mono";
+  --accent: #2ecc71;
 }
 
 body {
@@ -33,6 +34,19 @@ body {
 
 .heading {
   font-size: 3rem;
+}
+
+.heading::after {
+  content: "";
+  background-image: url("/assets/icon.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 .description {
@@ -78,8 +92,17 @@ body {
 
 .chip {
   visibility: hidden;
-  color: red;
+  color: var(--accent);
   animation: fade 1s;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+kbd {
+  color: var(--accent);
 }
 
 @keyframes fade {
@@ -117,11 +140,15 @@ body {
 @media screen and (max-width: 640px) {
   body {
     padding: 2rem;
-    gap: 5rem;
+    gap: 2rem;
   }
 
   .heading {
     font-size: 2rem;
+  }
+
+  .heading::after {
+    display: none;
   }
 
   [data-input-string] {
