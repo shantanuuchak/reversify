@@ -12,11 +12,16 @@ function reverse(string) {
   return revStr;
 }
 
-function handleClick() {
+function handleReverse() {
   const currInput = inputEl.value;
   const reverseInput = reverse(currInput);
   inputEl.value = reverseInput;
 }
 
 // listening on btn click
-copyBtnEl.addEventListener("click", handleClick);
+copyBtnEl.addEventListener("click", handleReverse);
+
+// listening on keyboard enter
+inputEl.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) handleReverse();
+});
