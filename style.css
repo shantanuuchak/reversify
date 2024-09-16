@@ -7,9 +7,9 @@
 }
 
 :root {
-  --shade: #0a0b0a;
+  --shade: #dedede;
   /* --shade: #231b1b; */
-  --tint: #bbbbaf;
+  --tint: #0a0b0a;
   --font: "Dank Mono";
 }
 
@@ -52,7 +52,9 @@ body {
 }
 
 [data-btn-copy] {
+  cursor: progress;
   width: 3rem;
-  font-size: 3rem;
+  border-radius: 100%;
   aspect-ratio: 1/1;
+  font-size: 3rem;
 }
