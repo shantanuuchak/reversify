@@ -9,13 +9,24 @@ function reverse(string) {
   strArr.reverse();
   // convert reverse array back to string
   const revStr = strArr.join("");
+
   return revStr;
 }
 
-function handleReverse() {
+async function handleReverse() {
+  // get current input
   const currInput = inputEl.value;
+  //   caluculate reverse
   const reverseInput = reverse(currInput);
+  // change the input to reverse
   inputEl.value = reverseInput;
+
+  // set clipboard to reverse
+  try {
+    await navigator.clipboard.writeText(reverseInput);
+  } catch (err) {
+    console.error("Exception occured:", err);
+  }
 }
 
 // listening on btn click
