@@ -24,3 +24,7 @@ body {
   display: grid;
   place-items: center;
 }
+
+.aside {
+  display: flex;
+}
