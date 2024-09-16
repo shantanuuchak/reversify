@@ -43,4 +43,12 @@ body {
   border-radius: 1rem;
   border: none;
   padding: 0.3rem;
+  font-family: inherit;
+  color: var(--shade);
+}
+
+[data-btn-copy] {
+  width: 3rem;
+  font-size: 3rem;
+  aspect-ratio: 1/1;
 }
