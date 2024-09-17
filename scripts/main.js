@@ -2,6 +2,11 @@
 const inputEl = document.querySelector("[data-input-string]");
 const copyBtnEl = document.querySelector("[data-btn-copy]");
 const chipEl = document.querySelector(".chip");
+const toggleEl = document.querySelector("[data-toggle-theme]");
+const themeImgEl = document.querySelector(".theme-img");
+
+// app variables
+let theme = "light";
 
 function reverse(string) {
   // convert to array
@@ -44,4 +49,16 @@ copyBtnEl.addEventListener("click", handleReverse);
 // listening on keyboard enter
 inputEl.addEventListener("keypress", (e) => {
   if (e.keyCode === 13) handleReverse();
+});
+
+// toggle dark/light mode
+toggleEl.addEventListener("click", (e) => {
+  const themeData = {
+    dark: "public/img/partly-cloudy-day.png",
+    light: "public/img/partly-cloudy-night.png",
+  };
+
+  const newTheme = theme === "light" ? "dark" : "light";
+  theme = newTheme;
+  console.log((themeImgEl.src = themeData[theme]));
 });
