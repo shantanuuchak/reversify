@@ -70,7 +70,7 @@ kbd {
   /* neumorphic */
   border-radius: 50px;
   background: #dedede;
-  box-shadow: -20px -20px 52px #bdbdbd, 20px 20px 52px #ffffff;
+  box-shadow: -20px -20px 52px var(--blur), 20px 20px 52px var(--blur);
 }
 
 /* copy button */
@@ -84,7 +84,7 @@ kbd {
   /* neumorphic */
   border-radius: 100%;
   background: linear-gradient(7deg, #eeeeee, #c8c8c8);
-  box-shadow: -1px 0px 52px #68686866, 20px -20px 52px #ffffff;
+  box-shadow: -1px 0px 52px var(--blur), 20px -20px 52px var(--blur);
 
   /* centering */
   display: grid;
@@ -116,11 +116,6 @@ kbd {
   [data-input-string] {
     font-size: 1.5rem;
     outline: 1px dashed var(--tint);
-
-    /* neumorphic */
-    border-radius: 50px;
-    background: #dedede;
-    box-shadow: -20px -20px 52px #bdbdbd, 20px 20px 52px #ffffff;
   }
 }
 
@@ -140,20 +135,6 @@ kbd {
   }
 
   [data-input-string] {
-    padding: 0.3rem;
     font-size: 1rem;
-    outline: 1px dashed var(--tint);
-
-    /* neumorphic */
-    border-radius: 50px;
-    background: #dedede;
-    box-shadow: -20px -20px 52px #bdbdbd, 20px 20px 52px #ffffff;
-  }
-
-  [data-btn-copy] {
-    height: 1rem;
-    width: 1rem;
-    background: none;
-    border: none;
   }
 }

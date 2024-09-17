@@ -4,4 +4,32 @@
   --tint: #0a0b0a;
   --font: "Nanum";
   --accent: #2ecc71;
+  --blur: #17161647;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shade: #0a0b0a;
+    --tint: #dedede;
+    --font: "Nanum";
+    --accent: #2ecc71;
+    --blur: #e8e6e617;
+  }
+}
+
+/* these class are changed on user button toggle */
+.dark-mode {
+  --shade: #0a0b0a;
+  --tint: #dedede;
+  --font: "Nanum";
+  --accent: #2ecc71;
+  --blur: #e8e6e617;
+}
+
+.light-mode {
+  --shade: #dedede;
+  --tint: #0a0b0a;
+  --font: "Nanum";
+  --accent: #2ecc71;
+  --blur: #17161647;
 }
