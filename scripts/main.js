@@ -54,8 +54,8 @@ inputEl.addEventListener("keypress", (e) => {
 // toggle dark/light mode
 toggleEl.addEventListener("click", (e) => {
   const themeData = {
-    dark: "public/img/partly-cloudy-day.png",
-    light: "public/img/partly-cloudy-night.png",
+    dark: "/img/partly-cloudy-day.png",
+    light: "/img/partly-cloudy-night.png",
   };
 
   const newTheme = theme === "light" ? "dark" : "light";
