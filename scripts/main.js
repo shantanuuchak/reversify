@@ -58,7 +58,11 @@ toggleEl.addEventListener("click", (e) => {
     light: "/img/partly-cloudy-night.png",
   };
 
-  const newTheme = theme === "light" ? "dark" : "light";
-  theme = newTheme;
-  console.log((themeImgEl.src = themeData[theme]));
+  // calculate next theme
+  theme = theme === "light" ? "dark" : "light";
+  themeImgEl.src = themeData[theme];
+
+  console.log("theme changed: ", theme);
 });
+
+console.log("site loaded, theme: ", theme);
