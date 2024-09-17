@@ -64,7 +64,7 @@ kbd {
   border: none;
   padding: 1rem;
   font-family: inherit;
-  color: var(--tint);
+  color: black;
   outline: 1px dashed var(--tint);
 
   /* neumorphic */

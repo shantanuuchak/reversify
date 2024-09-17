@@ -4,6 +4,7 @@ function handleThemeToggle() {
     ? "dark"
     : "light";
 
+  // Tweaking Theme
   if (currentTheme === "dark") {
     document.documentElement.classList.remove("dark-mode");
     document.documentElement.classList.add("light-mode");
