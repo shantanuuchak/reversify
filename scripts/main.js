@@ -17,6 +17,10 @@ function reverse(string) {
 async function handleReverse() {
   // get current input
   const currInput = inputEl.value;
+
+  // checking for blank
+  if (currInput === "") return;
+
   //   caluculate reverse
   const reverseInput = reverse(currInput);
   // change the input to reverse
