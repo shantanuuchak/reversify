@@ -1,0 +1,2 @@
+[X] Intial toggle theme image from html is static
+[X] Text not visible in dark mode
