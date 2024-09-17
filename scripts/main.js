@@ -1,3 +1,5 @@
+import handleThemeToggle from "./handleThemeToggle";
+
 // DOM Selection
 const inputEl = document.querySelector("[data-input-string]");
 const copyBtnEl = document.querySelector("[data-btn-copy]");
@@ -63,6 +65,7 @@ toggleEl.addEventListener("click", (e) => {
   themeImgEl.src = themeData[theme];
 
   console.log("theme changed: ", theme);
+  handleThemeToggle();
 });
 
 console.log("site loaded, theme: ", theme);
